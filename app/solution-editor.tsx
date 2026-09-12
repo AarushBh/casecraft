@@ -1,0 +1,11 @@
+'use client';
+import type {Draft} from './workbench-types';
+import type {Challenge} from './workbench-data';
+const sections:{key:keyof Draft['memo'];title:string;hint:string;placeholder:string;rows:number}[]=[
+{key:'recommendation',title:'Make the call',hint:'Lead with your decision and the result you expect.',placeholder:'I recommend… because… The expected impact is…',rows:4},
+{key:'analysis',title:'Build the argument',hint:'Connect facts, calculations and exhibits to your conclusion.',placeholder:'The core issue is… My model shows… Exhibit A demonstrates…',rows:6},
+{key:'assumptions',title:'Name your assumptions',hint:'Distinguish supplied facts from hypotheses you need to validate.',placeholder:'I am assuming… I would validate this by… If it is wrong…',rows:4},
+{key:'risks',title:'Try to break your solution',hint:'Explain a credible failure mode and what would make you reverse course.',placeholder:'The plan fails if… The downside is… I would stop or change course when…',rows:4},
+{key:'alternatives',title:'Consider another path',hint:'Compare a real alternative and explain why you did not choose it.',placeholder:'An alternative is… Its advantage is… I prefer my recommendation because…',rows:4},
+{key:'execution',title:'Make it happen',hint:'Specify the next step, owner, timeline and a measurable success condition.',placeholder:'First… The owner is… Within… We will track… Success means…',rows:4}];
+export default function SolutionEditor({memo,setMemo,challenge:c}:{memo:Draft['memo'];setMemo:(m:Draft['memo'])=>void;challenge:Challenge}){return <><div className="tool-heading"><div><span className="eyebrow">YOUR MEMO / REASONING THAT HOLDS UP</span><h2>Make a defensible recommendation.</h2><p>There is no single required viewpoint. The quality of your evidence and reasoning matters.</p></div></div><div className="case-prompt"><span className="eyebrow">THE QUESTION BEHIND THE NUMBERS</span><p>{c.tradeoff}</p></div>{sections.map((s,i)=><label className="memo-section" key={s.key}><div><span className="memo-number">0{i+1}</span><h3>{s.title}</h3><span className="word-count">{memo[s.key].trim()?memo[s.key].trim().split(/\s+/).length:0} words</span></div><p>{s.hint}</p><textarea rows={s.rows} value={memo[s.key]} maxLength={8000} onChange={e=>setMemo({...memo,[s.key]:e.target.value})} placeholder={s.placeholder}/></label>)}</>}

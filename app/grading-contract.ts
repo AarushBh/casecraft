@@ -1,0 +1,14 @@
+import type {Draft,AICritique} from './workbench-types';
+export function validateDraft(value:unknown):Draft{
+ if(!value||typeof value!=='object')throw Error('Invalid submission');const d=value as Draft;
+ const text=(v:unknown,max:number)=>typeof v==='string'&&v.length<=max;
+ if(!Number.isInteger(d.caseId)||d.caseId<1||d.caseId>8)throw Error('Unknown case');
+ if(!Array.isArray(d.rows)||d.rows.length<4||d.rows.length>20||d.rows.some(r=>!r||!text(r.label,80)||!text(r.formula,500)||!text(r.unit,20)))throw Error('Invalid model rows');
+ if(!d.memo||['recommendation','analysis','assumptions','risks','alternatives','execution'].some(k=>!text(d.memo[k as keyof Draft['memo']],8000)))throw Error('Invalid written solution');
+ if(!Array.isArray(d.scenario)||d.scenario.length>10||d.scenario.some(n=>typeof n!=='number'||!Number.isFinite(n)||Math.abs(n)>1e15))throw Error('Check your what-if inputs');
+ if(!Array.isArray(d.visuals)||d.visuals.length>4||d.visuals.some(v=>!v||!text(v.id,100)||!text(v.title,120)||!text(v.caption,1200)||!text(v.unit,60)||!['bar','line','area'].includes(v.type)||!Array.isArray(v.series)||v.series.length<1||v.series.length>10||v.series.some(s=>!s||!text(s.label,60)||!text(s.formula,500))))throw Error('Invalid exhibit');
+ if(!Number.isFinite(d.elapsed)||d.elapsed<0||d.elapsed>1e8)throw Error('Invalid elapsed time');return d;
+}
+const str={type:'string'};const score=(max:number)=>({type:'object',properties:{score:{type:'integer',minimum:0,maximum:max},feedback:str},required:['score','feedback'],additionalProperties:false});
+export const critiqueSchema={type:'object',properties:{summary:str,verdict:str,reasoning:score(30),feasibility:score(20),communication:score(10),strengths:{type:'array',items:str},gaps:{type:'array',items:{type:'object',properties:{claim:str,issue:str,consequence:str,fix:str},required:['claim','issue','consequence','fix'],additionalProperties:false}},alternatives:{type:'array',items:str},nextSteps:{type:'array',items:str}},required:['summary','verdict','reasoning','feasibility','communication','strengths','gaps','alternatives','nextSteps'],additionalProperties:false};
+export function validateCritique(v:unknown):AICritique{const c=v as AICritique;if(!c||typeof c.summary!=='string'||typeof c.verdict!=='string')throw Error('Invalid critique');for(const [key,max] of [['reasoning',30],['feasibility',20],['communication',10]] as const){const item=c[key];if(!item||!Number.isInteger(item.score)||item.score<0||item.score>max||typeof item.feedback!=='string')throw Error('Invalid rubric score')}for(const k of ['strengths','alternatives','nextSteps'] as const)if(!Array.isArray(c[k])||c[k].some(s=>typeof s!=='string'))throw Error('Invalid feedback');if(!Array.isArray(c.gaps)||c.gaps.some(g=>!g||['claim','issue','consequence','fix'].some(k=>typeof g[k as keyof typeof g]!=='string')))throw Error('Invalid gap analysis');return c}

@@ -1,0 +1,1462 @@
+[
+  {
+    "id": "deca-act",
+    "path": "deca",
+    "code": "ACT",
+    "name": "Accounting Applications Series",
+    "cluster": "Finance",
+    "format": "Individual Series",
+    "domain": "accounting",
+    "source": "https://www.deca.org/compete/accounting-applications-series"
+  },
+  {
+    "id": "deca-aam",
+    "path": "deca",
+    "code": "AAM",
+    "name": "Apparel and Accessories Marketing Series",
+    "cluster": "Marketing",
+    "format": "Individual Series",
+    "domain": "retail",
+    "source": "https://www.deca.org/compete/apparel-and-accessories-marketing-series"
+  },
+  {
+    "id": "deca-asm",
+    "path": "deca",
+    "code": "ASM",
+    "name": "Automotive Services Marketing Series",
+    "cluster": "Marketing",
+    "format": "Individual Series",
+    "domain": "automotive",
+    "source": "https://www.deca.org/compete/automotive-services-marketing-series"
+  },
+  {
+    "id": "deca-bfs",
+    "path": "deca",
+    "code": "BFS",
+    "name": "Business Finance Series",
+    "cluster": "Finance",
+    "format": "Individual Series",
+    "domain": "finance",
+    "source": "https://www.deca.org/compete/business-finance-series"
+  },
+  {
+    "id": "deca-ebg",
+    "path": "deca",
+    "code": "EBG",
+    "name": "Business Growth Plan",
+    "cluster": "Entrepreneurship",
+    "format": "Entrepreneurship",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/business-growth-plan"
+  },
+  {
+    "id": "deca-bltdm",
+    "path": "deca",
+    "code": "BLTDM",
+    "name": "Business Law and Ethics Team Decision Making",
+    "cluster": "Business Management and Administration",
+    "format": "Team Decision Making",
+    "domain": "ethics",
+    "source": "https://www.deca.org/compete/business-law-and-ethics-team-decision-making"
+  },
+  {
+    "id": "deca-bsm",
+    "path": "deca",
+    "code": "BSM",
+    "name": "Business Services Marketing Series",
+    "cluster": "Marketing",
+    "format": "Individual Series",
+    "domain": "services",
+    "source": "https://www.deca.org/compete/business-services-marketing-series"
+  },
+  {
+    "id": "deca-bor",
+    "path": "deca",
+    "code": "BOR",
+    "name": "Business Services Operations Research",
+    "cluster": "Business Management and Administration",
+    "format": "Business Operations Research",
+    "domain": "services",
+    "source": "https://www.deca.org/compete/business-services-operations-research"
+  },
+  {
+    "id": "deca-pmbs",
+    "path": "deca",
+    "code": "PMBS",
+    "name": "Business Solutions Project",
+    "cluster": "Business Management and Administration",
+    "format": "Project Management",
+    "domain": "projects",
+    "source": "https://www.deca.org/compete/business-solutions-project"
+  },
+  {
+    "id": "deca-bmor",
+    "path": "deca",
+    "code": "BMOR",
+    "name": "Buying and Merchandising Operations Research",
+    "cluster": "Marketing",
+    "format": "Business Operations Research",
+    "domain": "retail",
+    "source": "https://www.deca.org/compete/buying-and-merchandising-operations-research"
+  },
+  {
+    "id": "deca-btdm",
+    "path": "deca",
+    "code": "BTDM",
+    "name": "Buying and Merchandising Team Decision Making",
+    "cluster": "Marketing",
+    "format": "Team Decision Making",
+    "domain": "retail",
+    "source": "https://www.deca.org/compete/buying-and-merchandising-team-decision-making"
+  },
+  {
+    "id": "deca-pmcd",
+    "path": "deca",
+    "code": "PMCD",
+    "name": "Career Development Project",
+    "cluster": "Business Management and Administration",
+    "format": "Project Management",
+    "domain": "people",
+    "source": "https://www.deca.org/compete/career-development-project"
+  },
+  {
+    "id": "deca-pmca",
+    "path": "deca",
+    "code": "PMCA",
+    "name": "Community Awareness Project",
+    "cluster": "Business Management and Administration",
+    "format": "Project Management",
+    "domain": "projects",
+    "source": "https://www.deca.org/compete/community-awareness-project"
+  },
+  {
+    "id": "deca-pmcg",
+    "path": "deca",
+    "code": "PMCG",
+    "name": "Community Giving Project",
+    "cluster": "Business Management and Administration",
+    "format": "Project Management",
+    "domain": "projects",
+    "source": "https://www.deca.org/compete/community-giving-project"
+  },
+  {
+    "id": "deca-ent",
+    "path": "deca",
+    "code": "ENT",
+    "name": "Entrepreneurship Series",
+    "cluster": "Entrepreneurship",
+    "format": "Individual Series",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/entrepreneurship-series"
+  },
+  {
+    "id": "deca-etdm",
+    "path": "deca",
+    "code": "ETDM",
+    "name": "Entrepreneurship Team Decision Making",
+    "cluster": "Entrepreneurship",
+    "format": "Team Decision Making",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/entrepreneurship-team-decision-making"
+  },
+  {
+    "id": "deca-for",
+    "path": "deca",
+    "code": "FOR",
+    "name": "Finance Operations Research",
+    "cluster": "Finance",
+    "format": "Business Operations Research",
+    "domain": "research",
+    "source": "https://www.deca.org/compete/finance-operations-research"
+  },
+  {
+    "id": "deca-fce",
+    "path": "deca",
+    "code": "FCE",
+    "name": "Financial Consulting",
+    "cluster": "Finance",
+    "format": "Professional Selling and Consulting",
+    "domain": "succession",
+    "source": "https://www.deca.org/compete/financial-consulting"
+  },
+  {
+    "id": "deca-pmfl",
+    "path": "deca",
+    "code": "PMFL",
+    "name": "Financial Literacy Project",
+    "cluster": "Business Management and Administration",
+    "format": "Project Management",
+    "domain": "budgeting",
+    "source": "https://www.deca.org/compete/financial-literacy-project"
+  },
+  {
+    "id": "deca-ftdm",
+    "path": "deca",
+    "code": "FTDM",
+    "name": "Financial Services Team Decision Making",
+    "cluster": "Finance",
+    "format": "Team Decision Making",
+    "domain": "finance",
+    "source": "https://www.deca.org/compete/financial-services-team-decision-making"
+  },
+  {
+    "id": "deca-fms",
+    "path": "deca",
+    "code": "FMS",
+    "name": "Food Marketing Series",
+    "cluster": "Marketing",
+    "format": "Individual Series",
+    "domain": "food",
+    "source": "https://www.deca.org/compete/food-marketing-series"
+  },
+  {
+    "id": "deca-efb",
+    "path": "deca",
+    "code": "EFB",
+    "name": "Franchise Business Plan",
+    "cluster": "Entrepreneurship",
+    "format": "Entrepreneurship",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/franchise-business-plan"
+  },
+  {
+    "id": "deca-htor",
+    "path": "deca",
+    "code": "HTOR",
+    "name": "Hospitality and Tourism Operations Research",
+    "cluster": "Hospitality and Tourism",
+    "format": "Business Operations Research",
+    "domain": "research",
+    "source": "https://www.deca.org/compete/hospitality-and-tourism-operations-research"
+  },
+  {
+    "id": "deca-htps",
+    "path": "deca",
+    "code": "HTPS",
+    "name": "Hospitality and Tourism Professional Selling",
+    "cluster": "Hospitality and Tourism",
+    "format": "Professional Selling and Consulting",
+    "domain": "travel",
+    "source": "https://www.deca.org/compete/hospitality-and-tourism-professional-selling"
+  },
+  {
+    "id": "deca-htdm",
+    "path": "deca",
+    "code": "HTDM",
+    "name": "Hospitality Services Team Decision Making",
+    "cluster": "Hospitality and Tourism",
+    "format": "Team Decision Making",
+    "domain": "hospitality",
+    "source": "https://www.deca.org/compete/hospitality-services-team-decision-making"
+  },
+  {
+    "id": "deca-hlm",
+    "path": "deca",
+    "code": "HLM",
+    "name": "Hotel and Lodging Management Series",
+    "cluster": "Hospitality and Tourism",
+    "format": "Individual Series",
+    "domain": "hospitality",
+    "source": "https://www.deca.org/compete/hotel-and-lodging-management-series"
+  },
+  {
+    "id": "deca-hrm",
+    "path": "deca",
+    "code": "HRM",
+    "name": "Human Resources Management Series",
+    "cluster": "Business Management and Administration",
+    "format": "Individual Series",
+    "domain": "people",
+    "source": "https://www.deca.org/compete/human-resources-management-series"
+  },
+  {
+    "id": "deca-eib",
+    "path": "deca",
+    "code": "EIB",
+    "name": "Independent Business Plan",
+    "cluster": "Entrepreneurship",
+    "format": "Entrepreneurship",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/independent-business-plan"
+  },
+  {
+    "id": "deca-eip",
+    "path": "deca",
+    "code": "EIP",
+    "name": "Innovation Plan",
+    "cluster": "Entrepreneurship",
+    "format": "Entrepreneurship",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/innovation-plan"
+  },
+  {
+    "id": "deca-imce",
+    "path": "deca",
+    "code": "IMCE",
+    "name": "Integrated Marketing Campaign-Event",
+    "cluster": "Marketing",
+    "format": "Integrated Marketing Campaign",
+    "domain": "events",
+    "source": "https://www.deca.org/compete/integrated-marketing-campaign-event"
+  },
+  {
+    "id": "deca-imcp",
+    "path": "deca",
+    "code": "IMCP",
+    "name": "Integrated Marketing Campaign-Product",
+    "cluster": "Marketing",
+    "format": "Integrated Marketing Campaign",
+    "domain": "marketing",
+    "source": "https://www.deca.org/compete/integrated-marketing-campaign-product"
+  },
+  {
+    "id": "deca-imcs",
+    "path": "deca",
+    "code": "IMCS",
+    "name": "Integrated Marketing Campaign-Service",
+    "cluster": "Marketing",
+    "format": "Integrated Marketing Campaign",
+    "domain": "services",
+    "source": "https://www.deca.org/compete/integrated-marketing-campaign-service"
+  },
+  {
+    "id": "deca-ibp",
+    "path": "deca",
+    "code": "IBP",
+    "name": "International Business Plan",
+    "cluster": "Entrepreneurship",
+    "format": "Entrepreneurship",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/international-business-plan"
+  },
+  {
+    "id": "deca-mcs",
+    "path": "deca",
+    "code": "MCS",
+    "name": "Marketing Communications Series",
+    "cluster": "Marketing",
+    "format": "Individual Series",
+    "domain": "marketing",
+    "source": "https://www.deca.org/compete/marketing-communications-series"
+  },
+  {
+    "id": "deca-mtdm",
+    "path": "deca",
+    "code": "MTDM",
+    "name": "Marketing Management Team Decision Making",
+    "cluster": "Marketing",
+    "format": "Team Decision Making",
+    "domain": "marketing",
+    "source": "https://www.deca.org/compete/marketing-management-team-decision-making"
+  },
+  {
+    "id": "deca-pfl",
+    "path": "deca",
+    "code": "PFL",
+    "name": "Personal Financial Literacy",
+    "cluster": "Personal Financial Literacy",
+    "format": "Personal Financial Literacy",
+    "domain": "budgeting",
+    "source": "https://www.deca.org/compete/personal-financial-literacy"
+  },
+  {
+    "id": "deca-pbm",
+    "path": "deca",
+    "code": "PBM",
+    "name": "Principles of Business Management and Administration",
+    "cluster": "Business Management and Administration",
+    "format": "Principles of Business Administration",
+    "domain": "people",
+    "source": "https://www.deca.org/compete/principles-of-business-management-and-administration"
+  },
+  {
+    "id": "deca-pen",
+    "path": "deca",
+    "code": "PEN",
+    "name": "Principles of Entrepreneurship",
+    "cluster": "Entrepreneurship",
+    "format": "Principles of Business Administration",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/principles-of-entrepreneurship"
+  },
+  {
+    "id": "deca-pfn",
+    "path": "deca",
+    "code": "PFN",
+    "name": "Principles of Finance",
+    "cluster": "Finance",
+    "format": "Principles of Business Administration",
+    "domain": "finance",
+    "source": "https://www.deca.org/compete/principles-of-finance"
+  },
+  {
+    "id": "deca-pht",
+    "path": "deca",
+    "code": "PHT",
+    "name": "Principles of Hospitality and Tourism",
+    "cluster": "Hospitality and Tourism",
+    "format": "Principles of Business Administration",
+    "domain": "hospitality",
+    "source": "https://www.deca.org/compete/principles-of-hospitality"
+  },
+  {
+    "id": "deca-pmk",
+    "path": "deca",
+    "code": "PMK",
+    "name": "Principles of Marketing",
+    "cluster": "Marketing",
+    "format": "Principles of Business Administration",
+    "domain": "marketing",
+    "source": "https://www.deca.org/compete/principles-of-marketing"
+  },
+  {
+    "id": "deca-pse",
+    "path": "deca",
+    "code": "PSE",
+    "name": "Professional Selling",
+    "cluster": "Marketing",
+    "format": "Professional Selling and Consulting",
+    "domain": "sales",
+    "source": "https://www.deca.org/compete/professional-selling"
+  },
+  {
+    "id": "deca-qsrm",
+    "path": "deca",
+    "code": "QSRM",
+    "name": "Quick Serve Restaurant Management Series",
+    "cluster": "Hospitality and Tourism",
+    "format": "Individual Series",
+    "domain": "food",
+    "source": "https://www.deca.org/compete/quick-serve-restaurant-management-series"
+  },
+  {
+    "id": "deca-rfsm",
+    "path": "deca",
+    "code": "RFSM",
+    "name": "Restaurant and Food Service Management Series",
+    "cluster": "Hospitality and Tourism",
+    "format": "Individual Series",
+    "domain": "food",
+    "source": "https://www.deca.org/compete/restaurant-and-food-service-management-series"
+  },
+  {
+    "id": "deca-rms",
+    "path": "deca",
+    "code": "RMS",
+    "name": "Retail Merchandising Series",
+    "cluster": "Marketing",
+    "format": "Individual Series",
+    "domain": "retail",
+    "source": "https://www.deca.org/compete/retail-merchandising-series"
+  },
+  {
+    "id": "deca-pmsp",
+    "path": "deca",
+    "code": "PMSP",
+    "name": "Sales Project",
+    "cluster": "Business Management and Administration",
+    "format": "Project Management",
+    "domain": "projects",
+    "source": "https://www.deca.org/compete/sales-project"
+  },
+  {
+    "id": "deca-seor",
+    "path": "deca",
+    "code": "SEOR",
+    "name": "Sports and Entertainment Marketing Operations Research",
+    "cluster": "Marketing",
+    "format": "Business Operations Research",
+    "domain": "research",
+    "source": "https://www.deca.org/compete/sports-and-entertainment-marketing-operations-research"
+  },
+  {
+    "id": "deca-sem",
+    "path": "deca",
+    "code": "SEM",
+    "name": "Sports and Entertainment Marketing Series",
+    "cluster": "Marketing",
+    "format": "Individual Series",
+    "domain": "events",
+    "source": "https://www.deca.org/compete/sports-and-entertainment-marketing-series"
+  },
+  {
+    "id": "deca-stdm",
+    "path": "deca",
+    "code": "STDM",
+    "name": "Sports and Entertainment Marketing Team Decision Making",
+    "cluster": "Marketing",
+    "format": "Team Decision Making",
+    "domain": "events",
+    "source": "https://www.deca.org/compete/sports-and-entertainment-marketing-team-decision-making"
+  },
+  {
+    "id": "deca-esb",
+    "path": "deca",
+    "code": "ESB",
+    "name": "Start-Up Business Plan",
+    "cluster": "Entrepreneurship",
+    "format": "Entrepreneurship",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/start-up-business-plan"
+  },
+  {
+    "id": "deca-smg",
+    "path": "deca",
+    "code": "SMG",
+    "name": "Stock Market Game",
+    "cluster": "Finance",
+    "format": "Online Events",
+    "domain": "investing",
+    "source": "https://www.deca.org/compete/stock-market-game"
+  },
+  {
+    "id": "deca-ttdm",
+    "path": "deca",
+    "code": "TTDM",
+    "name": "Travel and Tourism Team Decision Making",
+    "cluster": "Hospitality and Tourism",
+    "format": "Team Decision Making",
+    "domain": "travel",
+    "source": "https://www.deca.org/compete/travel-and-tourism-team-decision-making"
+  },
+  {
+    "id": "deca-vbcac",
+    "path": "deca",
+    "code": "VBCAC",
+    "name": "Virtual Business Challenge-Accounting",
+    "cluster": "Finance",
+    "format": "Online Events",
+    "domain": "accounting",
+    "source": "https://www.deca.org/compete/virtual-business-challenge-accounting"
+  },
+  {
+    "id": "deca-vbcen",
+    "path": "deca",
+    "code": "VBCEN",
+    "name": "Virtual Business Challenge-Entrepreneurship",
+    "cluster": "Entrepreneurship",
+    "format": "Online Events",
+    "domain": "entrepreneurship",
+    "source": "https://www.deca.org/compete/virtual-business-challenge-entrepreneurship"
+  },
+  {
+    "id": "deca-vbcfa",
+    "path": "deca",
+    "code": "VBCFA",
+    "name": "Virtual Business Challenge-Fashion",
+    "cluster": "Marketing",
+    "format": "Online Events",
+    "domain": "retail",
+    "source": "https://www.deca.org/compete/virtual-business-challenge-fashion"
+  },
+  {
+    "id": "deca-vbchm",
+    "path": "deca",
+    "code": "VBCHM",
+    "name": "Virtual Business Challenge-Hotel Management",
+    "cluster": "Hospitality and Tourism",
+    "format": "Online Events",
+    "domain": "hospitality",
+    "source": "https://www.deca.org/compete/virtual-business-challenge-hotel-management"
+  },
+  {
+    "id": "deca-vbcpf",
+    "path": "deca",
+    "code": "VBCPF",
+    "name": "Virtual Business Challenge-Personal Finance",
+    "cluster": "Personal Financial Literacy",
+    "format": "Online Events",
+    "domain": "budgeting",
+    "source": "https://www.deca.org/compete/virtual-business-challenge-personal-finance"
+  },
+  {
+    "id": "deca-vbcrs",
+    "path": "deca",
+    "code": "VBCRS",
+    "name": "Virtual Business Challenge-Restaurant",
+    "cluster": "Hospitality and Tourism",
+    "format": "Online Events",
+    "domain": "food",
+    "source": "https://www.deca.org/compete/virtual-business-challenge-restaurant"
+  },
+  {
+    "id": "deca-vbcrt",
+    "path": "deca",
+    "code": "VBCRT",
+    "name": "Virtual Business Challenge-Retail",
+    "cluster": "Marketing",
+    "format": "Online Events",
+    "domain": "retail",
+    "source": "https://www.deca.org/compete/virtual-business-challenge-retail"
+  },
+  {
+    "id": "deca-vbcsp",
+    "path": "deca",
+    "code": "VBCSP",
+    "name": "Virtual Business Challenge-Sports",
+    "cluster": "Marketing",
+    "format": "Online Events",
+    "domain": "events",
+    "source": "https://www.deca.org/compete/virtual-business-challenge-sports"
+  },
+  {
+    "id": "fbla-accounting",
+    "path": "fbla",
+    "code": "",
+    "name": "Accounting",
+    "cluster": "Accounting",
+    "format": "Objective Test",
+    "domain": "accounting",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-advanced-accounting",
+    "path": "fbla",
+    "code": "",
+    "name": "Advanced Accounting",
+    "cluster": "Accounting",
+    "format": "Objective Test",
+    "domain": "accounting",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-advertising",
+    "path": "fbla",
+    "code": "",
+    "name": "Advertising",
+    "cluster": "Marketing",
+    "format": "Objective Test",
+    "domain": "marketing",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-agribusiness",
+    "path": "fbla",
+    "code": "",
+    "name": "Agribusiness",
+    "cluster": "Agriculture",
+    "format": "Objective Test",
+    "domain": "agriculture",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-banking-financial-systems",
+    "path": "fbla",
+    "code": "",
+    "name": "Banking & Financial Systems",
+    "cluster": "Finance",
+    "format": "Role Play",
+    "domain": "finance",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-broadcast-journalism",
+    "path": "fbla",
+    "code": "",
+    "name": "Broadcast Journalism",
+    "cluster": "Media",
+    "format": "Presentation",
+    "domain": "media",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-business-communication",
+    "path": "fbla",
+    "code": "",
+    "name": "Business Communication",
+    "cluster": "Communication",
+    "format": "Objective Test",
+    "domain": "communication",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-business-ethics",
+    "path": "fbla",
+    "code": "",
+    "name": "Business Ethics",
+    "cluster": "Ethics",
+    "format": "Presentation",
+    "domain": "ethics",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-business-law",
+    "path": "fbla",
+    "code": "",
+    "name": "Business Law",
+    "cluster": "Ethics",
+    "format": "Objective Test",
+    "domain": "ethics",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-business-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Business Management",
+    "cluster": "People",
+    "format": "Role Play",
+    "domain": "people",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-business-plan",
+    "path": "fbla",
+    "code": "",
+    "name": "Business Plan",
+    "cluster": "Entrepreneurship",
+    "format": "Presentation",
+    "domain": "entrepreneurship",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-career-portfolio",
+    "path": "fbla",
+    "code": "",
+    "name": "Career Portfolio",
+    "cluster": "Career",
+    "format": "Presentation",
+    "domain": "career",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-coding-programming",
+    "path": "fbla",
+    "code": "",
+    "name": "Coding & Programming",
+    "cluster": "Coding",
+    "format": "Presentation",
+    "domain": "coding",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-community-service-project",
+    "path": "fbla",
+    "code": "",
+    "name": "Community Service Project",
+    "cluster": "Projects",
+    "format": "Chapter",
+    "domain": "projects",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-computer-applications",
+    "path": "fbla",
+    "code": "",
+    "name": "Computer Applications",
+    "cluster": "Office",
+    "format": "Production",
+    "domain": "office",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-computer-game-simulation-programming",
+    "path": "fbla",
+    "code": "",
+    "name": "Computer Game & Simulation Programming",
+    "cluster": "Coding",
+    "format": "Presentation",
+    "domain": "coding",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-computer-problem-solving",
+    "path": "fbla",
+    "code": "",
+    "name": "Computer Problem Solving",
+    "cluster": "It",
+    "format": "Objective Test",
+    "domain": "it",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-customer-service",
+    "path": "fbla",
+    "code": "",
+    "name": "Customer Service",
+    "cluster": "Services",
+    "format": "Role Play",
+    "domain": "services",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-cybersecurity",
+    "path": "fbla",
+    "code": "",
+    "name": "Cybersecurity",
+    "cluster": "Security",
+    "format": "Objective Test",
+    "domain": "security",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-data-analysis",
+    "path": "fbla",
+    "code": "",
+    "name": "Data Analysis",
+    "cluster": "Data",
+    "format": "Presentation",
+    "domain": "data",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-data-science-ai",
+    "path": "fbla",
+    "code": "",
+    "name": "Data Science & AI",
+    "cluster": "Data",
+    "format": "Objective Test",
+    "domain": "data",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-digital-animation",
+    "path": "fbla",
+    "code": "",
+    "name": "Digital Animation",
+    "cluster": "Media",
+    "format": "Presentation",
+    "domain": "media",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-digital-video-production",
+    "path": "fbla",
+    "code": "",
+    "name": "Digital Video Production",
+    "cluster": "Media",
+    "format": "Presentation",
+    "domain": "media",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-economics",
+    "path": "fbla",
+    "code": "",
+    "name": "Economics",
+    "cluster": "Economics",
+    "format": "Objective Test",
+    "domain": "economics",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-entrepreneurship",
+    "path": "fbla",
+    "code": "",
+    "name": "Entrepreneurship",
+    "cluster": "Entrepreneurship",
+    "format": "Role Play",
+    "domain": "entrepreneurship",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-event-planning",
+    "path": "fbla",
+    "code": "",
+    "name": "Event Planning",
+    "cluster": "Events",
+    "format": "Presentation",
+    "domain": "events",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-financial-planning",
+    "path": "fbla",
+    "code": "",
+    "name": "Financial Planning",
+    "cluster": "Budgeting",
+    "format": "Presentation",
+    "domain": "budgeting",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-financial-statement-analysis",
+    "path": "fbla",
+    "code": "",
+    "name": "Financial Statement Analysis",
+    "cluster": "Accounting",
+    "format": "Presentation",
+    "domain": "accounting",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-future-business-educator",
+    "path": "fbla",
+    "code": "",
+    "name": "Future Business Educator",
+    "cluster": "Education",
+    "format": "Presentation",
+    "domain": "education",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-future-business-leader",
+    "path": "fbla",
+    "code": "",
+    "name": "Future Business Leader",
+    "cluster": "Career",
+    "format": "Presentation",
+    "domain": "career",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-graphic-design",
+    "path": "fbla",
+    "code": "",
+    "name": "Graphic Design",
+    "cluster": "Design",
+    "format": "Presentation",
+    "domain": "design",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-healthcare-administration",
+    "path": "fbla",
+    "code": "",
+    "name": "Healthcare Administration",
+    "cluster": "Healthcare",
+    "format": "Objective Test",
+    "domain": "healthcare",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-hospitality-event-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Hospitality & Event Management",
+    "cluster": "Hospitality",
+    "format": "Role Play",
+    "domain": "hospitality",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-human-resource-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Human Resource Management",
+    "cluster": "People",
+    "format": "Objective Test",
+    "domain": "people",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-impromptu-speaking",
+    "path": "fbla",
+    "code": "",
+    "name": "Impromptu Speaking",
+    "cluster": "Communication",
+    "format": "Presentation",
+    "domain": "communication",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-insurance-risk-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Insurance & Risk Management",
+    "cluster": "Insurance",
+    "format": "Objective Test",
+    "domain": "insurance",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-international-business",
+    "path": "fbla",
+    "code": "",
+    "name": "International Business",
+    "cluster": "International",
+    "format": "Role Play",
+    "domain": "international",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-business-communication",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Business Communication",
+    "cluster": "Communication",
+    "format": "Objective Test",
+    "domain": "communication",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-business-concepts",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Business Concepts",
+    "cluster": "Entrepreneurship",
+    "format": "Objective Test",
+    "domain": "entrepreneurship",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-business-presentation",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Business Presentation",
+    "cluster": "Communication",
+    "format": "Presentation",
+    "domain": "communication",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-business-procedures",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Business Procedures",
+    "cluster": "Projects",
+    "format": "Objective Test",
+    "domain": "projects",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-fbla",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to FBLA",
+    "cluster": "Projects",
+    "format": "Objective Test",
+    "domain": "projects",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-information-technology",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Information Technology",
+    "cluster": "It",
+    "format": "Objective Test",
+    "domain": "it",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-marketing-concepts",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Marketing Concepts",
+    "cluster": "Marketing",
+    "format": "Objective Test",
+    "domain": "marketing",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-parliamentary-procedure",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Parliamentary Procedure",
+    "cluster": "Parliament",
+    "format": "Objective Test",
+    "domain": "parliament",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-programming",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Programming",
+    "cluster": "Coding",
+    "format": "Presentation",
+    "domain": "coding",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-public-speaking",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Public Speaking",
+    "cluster": "Communication",
+    "format": "Presentation",
+    "domain": "communication",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-retail-merchandising",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Retail & Merchandising",
+    "cluster": "Retail",
+    "format": "Objective Test",
+    "domain": "retail",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-social-media-strategy",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Social Media Strategy",
+    "cluster": "Marketing",
+    "format": "Presentation",
+    "domain": "marketing",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-introduction-to-supply-chain-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Introduction to Supply Chain Management",
+    "cluster": "Supply",
+    "format": "Objective Test",
+    "domain": "supply",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-job-interview",
+    "path": "fbla",
+    "code": "",
+    "name": "Job Interview",
+    "cluster": "Career",
+    "format": "Presentation",
+    "domain": "career",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-journalism",
+    "path": "fbla",
+    "code": "",
+    "name": "Journalism",
+    "cluster": "Media",
+    "format": "Objective Test",
+    "domain": "media",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-local-chapter-annual-business-report",
+    "path": "fbla",
+    "code": "",
+    "name": "Local Chapter Annual Business Report",
+    "cluster": "Projects",
+    "format": "Chapter",
+    "domain": "projects",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-management-information-systems",
+    "path": "fbla",
+    "code": "",
+    "name": "Management Information Systems",
+    "cluster": "It",
+    "format": "Role Play",
+    "domain": "it",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-marketing",
+    "path": "fbla",
+    "code": "",
+    "name": "Marketing",
+    "cluster": "Marketing",
+    "format": "Role Play",
+    "domain": "marketing",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-mobile-application-development",
+    "path": "fbla",
+    "code": "",
+    "name": "Mobile Application Development",
+    "cluster": "Coding",
+    "format": "Presentation",
+    "domain": "coding",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-network-design",
+    "path": "fbla",
+    "code": "",
+    "name": "Network Design",
+    "cluster": "Network",
+    "format": "Role Play",
+    "domain": "network",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-networking-infrastructures",
+    "path": "fbla",
+    "code": "",
+    "name": "Networking Infrastructures",
+    "cluster": "Network",
+    "format": "Objective Test",
+    "domain": "network",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-organizational-leadership",
+    "path": "fbla",
+    "code": "",
+    "name": "Organizational Leadership",
+    "cluster": "People",
+    "format": "Objective Test",
+    "domain": "people",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-parliamentary-procedure",
+    "path": "fbla",
+    "code": "",
+    "name": "Parliamentary Procedure",
+    "cluster": "Parliament",
+    "format": "Role Play",
+    "domain": "parliament",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-personal-finance",
+    "path": "fbla",
+    "code": "",
+    "name": "Personal Finance",
+    "cluster": "Budgeting",
+    "format": "Objective Test",
+    "domain": "budgeting",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-project-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Project Management",
+    "cluster": "Projects",
+    "format": "Objective Test",
+    "domain": "projects",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-public-administration-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Public Administration & Management",
+    "cluster": "Public",
+    "format": "Objective Test",
+    "domain": "public",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-public-service-announcement",
+    "path": "fbla",
+    "code": "",
+    "name": "Public Service Announcement",
+    "cluster": "Media",
+    "format": "Presentation",
+    "domain": "media",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-public-speaking",
+    "path": "fbla",
+    "code": "",
+    "name": "Public Speaking",
+    "cluster": "Communication",
+    "format": "Presentation",
+    "domain": "communication",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-real-estate",
+    "path": "fbla",
+    "code": "",
+    "name": "Real Estate",
+    "cluster": "Property",
+    "format": "Objective Test",
+    "domain": "property",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-retail-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Retail Management",
+    "cluster": "Retail",
+    "format": "Objective Test",
+    "domain": "retail",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-sales-presentation",
+    "path": "fbla",
+    "code": "",
+    "name": "Sales Presentation",
+    "cluster": "Sales",
+    "format": "Presentation",
+    "domain": "sales",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-securities-investments",
+    "path": "fbla",
+    "code": "",
+    "name": "Securities & Investments",
+    "cluster": "Investing",
+    "format": "Objective Test",
+    "domain": "investing",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-social-media-strategies",
+    "path": "fbla",
+    "code": "",
+    "name": "Social Media Strategies",
+    "cluster": "Marketing",
+    "format": "Presentation",
+    "domain": "marketing",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-sports-entertainment-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Sports & Entertainment Management",
+    "cluster": "Events",
+    "format": "Role Play",
+    "domain": "events",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-supply-chain-management",
+    "path": "fbla",
+    "code": "",
+    "name": "Supply Chain Management",
+    "cluster": "Supply",
+    "format": "Presentation",
+    "domain": "supply",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-technology-support-services",
+    "path": "fbla",
+    "code": "",
+    "name": "Technology Support & Services",
+    "cluster": "It",
+    "format": "Role Play",
+    "domain": "it",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-visual-design",
+    "path": "fbla",
+    "code": "",
+    "name": "Visual Design",
+    "cluster": "Design",
+    "format": "Presentation",
+    "domain": "design",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-website-coding-development",
+    "path": "fbla",
+    "code": "",
+    "name": "Website Coding & Development",
+    "cluster": "Coding",
+    "format": "Presentation",
+    "domain": "coding",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "fbla-website-design",
+    "path": "fbla",
+    "code": "",
+    "name": "Website Design",
+    "cluster": "Design",
+    "format": "Presentation",
+    "domain": "design",
+    "source": "https://www.fbla.org/high-school/competitive-events/"
+  },
+  {
+    "id": "banking",
+    "path": "interviews",
+    "code": "",
+    "name": "Investment Banking",
+    "cluster": "Interviews",
+    "format": "Interview preparation",
+    "domain": "banking",
+    "source": "https://www.goldmansachs.com/careers/students/prepare"
+  },
+  {
+    "id": "consulting",
+    "path": "interviews",
+    "code": "",
+    "name": "Consulting",
+    "cluster": "Interviews",
+    "format": "Interview preparation",
+    "domain": "consulting",
+    "source": "https://www.mckinsey.com/careers/interviewing"
+  },
+  {
+    "id": "quant",
+    "path": "interviews",
+    "code": "",
+    "name": "Quantitative Roles",
+    "cluster": "Interviews",
+    "format": "Interview preparation",
+    "domain": "quant",
+    "source": "https://www.janestreet.com/probability-markets/"
+  },
+  {
+    "id": "software-engineering",
+    "name": "Software Engineering",
+    "domain": "coding",
+    "cluster": "Technology",
+    "source": "https://careers.microsoft.com/v2/global/en/hiring-tips/technical-interviewing.html",
+    "path": "interviews",
+    "code": "",
+    "format": "Interview preparation"
+  },
+  {
+    "id": "product-management",
+    "name": "Product Management",
+    "domain": "projects",
+    "cluster": "Product & Strategy",
+    "source": "https://www.amazon.jobs/content/en/how-we-hire/product-manager-interview-prep",
+    "path": "interviews",
+    "code": "",
+    "format": "Interview preparation"
+  },
+  {
+    "id": "data-analytics",
+    "name": "Data Analytics & Data Science",
+    "domain": "data",
+    "cluster": "Data",
+    "source": "https://careers.microsoft.com/v2/global/en/hiring-tips/technical-interviewing.html",
+    "path": "interviews",
+    "code": "",
+    "format": "Interview preparation"
+  },
+  {
+    "id": "data-engineering",
+    "name": "Data Engineering",
+    "domain": "office",
+    "cluster": "Data",
+    "source": "https://careers.microsoft.com/v2/global/en/hiring-tips/technical-interviewing.html",
+    "path": "interviews",
+    "code": "",
+    "format": "Interview preparation"
+  },
+  {
+    "id": "cybersecurity",
+    "name": "Cybersecurity",
+    "domain": "security",
+    "cluster": "Technology",
+    "source": "https://careers.microsoft.com/v2/global/en/hiring-tips/technical-interviewing.html",
+    "path": "interviews",
+    "code": "",
+    "format": "Interview preparation"
+  },
+  {
+    "id": "corporate-finance",
+    "name": "Corporate Finance & FP&A",
+    "domain": "accounting",
+    "cluster": "Finance",
+    "source": "https://careers.microsoft.com/v2/global/en/hiring-tips",
+    "path": "interviews",
+    "code": "",
+    "format": "Interview preparation"
+  },
+  {
+    "id": "technical-sales",
+    "name": "Technical Sales & Solutions Consulting",
+    "domain": "sales",
+    "cluster": "Business",
+    "source": "https://careers.microsoft.com/v2/global/en/hiring-tips",
+    "path": "interviews",
+    "code": "",
+    "format": "Interview preparation"
+  }
+]
