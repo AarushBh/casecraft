@@ -66,15 +66,9 @@ importers:
         specifier: 1.0.0-beta.5
         version: 1.0.0-beta.5(@vitejs/plugin-react@6.0.2(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2)))(@vitejs/plugin-rsc@0.5.26(react-dom@19.2.6(react@19.2.6))(react-server-dom-webpack@19.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(webpack@5.110.3(esbuild@0.27.3)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.34.5)))(react@19.2.6)(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2)))(react-dom@19.2.6(react@19.2.6))(react-server-dom-webpack@19.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(webpack@5.110.3(esbuild@0.27.3)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.34.5)))(react@19.2.6)(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2))
     devDependencies:
-      '@cloudflare/vite-plugin':
-        specifier: 1.37.1
-        version: 1.37.1(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2))(workerd@1.20260515.1)(wrangler@4.92.0(@cloudflare/workers-types@4.20260515.1))
       '@cloudflare/workers-types':
         specifier: 4.20260515.1
         version: 4.20260515.1
-      '@openai/sites-vite-plugin':
-        specifier: 0.2.0
-        version: 0.2.0(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2))
       '@tailwindcss/postcss':
         specifier: 4.2.1
         version: 4.2.1
@@ -90,9 +84,6 @@ importers:
       '@vitejs/plugin-react':
         specifier: 6.0.2
         version: 6.0.2(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2))
-      '@vitejs/plugin-rsc':
-        specifier: 0.5.26
-        version: 0.5.26(react-dom@19.2.6(react@19.2.6))(react-server-dom-webpack@19.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(webpack@5.110.3(esbuild@0.27.3)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.34.5)))(react@19.2.6)(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2))
       oxfmt:
         specifier: 0.61.0
         version: 0.61.0
@@ -293,12 +284,6 @@ packages:
     peerDependenciesMeta:
       workerd:
         optional: true
-
-  '@cloudflare/vite-plugin@1.37.1':
-    resolution: {integrity: sha512-FldhsmkXyLsX3yI+p0aJDo/kGyY69pDdynz2JjcuH3eCiQ+G9XaY3CrN+UYEfCbWv8CiR2wL95lNg0fT/HfwWA==}
-    peerDependencies:
-      vite: ^6.1.0 || ^7.0.0 || ^8.0.0
-      wrangler: ^4.92.0
 
   '@cloudflare/workerd-darwin-64@1.20260515.1':
     resolution: {integrity: sha512-Wtw44el2pNbzixvTkWdfeBDTrQwQbJRz7/JUvPKV27I0pQWXbhNJPpM8cstq/pbrU5AGcA/HjFH6yPMRTIRKig==}
@@ -739,12 +724,6 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
-
-  '@openai/sites-vite-plugin@0.2.0':
-    resolution: {integrity: sha512-4ThLMW9eaf2gd+SqBwHmqBONKBAbQ2BuOFev7mHq7Y2W5mm/rfVJOSjcgQIsY2PqdXxXNZ4Yd0+s0DlSUYehag==}
-    engines: {node: '>=22.13.0'}
-    peerDependencies:
-      vite: ^8.0.0
 
   '@oxc-project/types@0.130.0':
     resolution: {integrity: sha512-ibD2usx9JRu7f5pu2tMKMI4cpA4NgXJQoYRP4pQ7Pxmn1l6k/53qWtQWZayhYy3X4QZkt90Ot+mJEaeXouio6Q==}
@@ -3736,19 +3715,6 @@ snapshots:
     optionalDependencies:
       workerd: 1.20260515.1
 
-  '@cloudflare/vite-plugin@1.37.1(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2))(workerd@1.20260515.1)(wrangler@4.92.0(@cloudflare/workers-types@4.20260515.1))':
-    dependencies:
-      '@cloudflare/unenv-preset': 2.16.1(unenv@2.0.0-rc.24)(workerd@1.20260515.1)
-      miniflare: 4.20260515.0
-      unenv: 2.0.0-rc.24
-      vite: 8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2)
-      wrangler: 4.92.0(@cloudflare/workers-types@4.20260515.1)
-      ws: 8.18.0
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-      - workerd
-
   '@cloudflare/workerd-darwin-64@1.20260515.1':
     optional: true
 
@@ -4078,10 +4044,6 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.20.3
-
-  '@openai/sites-vite-plugin@0.2.0(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2))':
-    dependencies:
-      vite: 8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2)
 
   '@oxc-project/types@0.130.0': {}
 
@@ -4429,7 +4391,8 @@ snapshots:
   '@rolldown/binding-win32-x64-msvc@1.0.1':
     optional: true
 
-  '@rolldown/pluginutils@1.0.0-rc.18': {}
+  '@rolldown/pluginutils@1.0.0-rc.18':
+    optional: true
 
   '@rolldown/pluginutils@1.0.1': {}
 
@@ -4616,6 +4579,7 @@ snapshots:
       vitefu: 1.1.3(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2))
     optionalDependencies:
       react-server-dom-webpack: 19.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(webpack@5.110.3(esbuild@0.27.3)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.34.5))
+    optional: true
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:
@@ -5092,6 +5056,7 @@ snapshots:
   estree-walker@3.0.3:
     dependencies:
       '@types/estree': 1.0.9
+    optional: true
 
   etag@1.8.1: {}
 
@@ -5396,7 +5361,8 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-tokens@9.0.1: {}
+  js-tokens@9.0.1:
+    optional: true
 
   js-yaml@4.3.2:
     dependencies:
@@ -6176,7 +6142,8 @@ snapshots:
 
   source-map@0.6.1: {}
 
-  srvx@0.11.22: {}
+  srvx@0.11.22:
+    optional: true
 
   statuses@2.0.2: {}
 
@@ -6213,6 +6180,7 @@ snapshots:
   strip-literal@3.1.0:
     dependencies:
       js-tokens: 9.0.1
+    optional: true
 
   supports-color@10.2.2: {}
 
@@ -6265,7 +6233,8 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  turbo-stream@3.2.1: {}
+  turbo-stream@3.2.1:
+    optional: true
 
   tw-animate-css@1.4.0: {}
 
@@ -6398,6 +6367,7 @@ snapshots:
   vitefu@1.1.3(vite@8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2)):
     optionalDependencies:
       vite: 8.0.13(@types/node@22.19.19)(esbuild@0.27.3)(jiti@2.7.0)(terser@5.51.2)
+    optional: true
 
   watchpack@2.5.2:
     dependencies:
