@@ -54,7 +54,7 @@ The app uses React, TypeScript, Vite, and Tailwind CSS.
 | `components/ui/` | Shared UI components |
 | `tests/` | Calculation, case, and scoring regression tests |
 
-The older model studio and server grading modules remain in `app/` for reference and tests. They are not included in the public application.
+The older model studio remains in `app/` for reference and tests and is not included in the public application. Server-only grading code is maintained separately in a private repository. Earlier public commits still contain its previously MIT-licensed version.
 
 Pull requests run type checks, tests, and a production build. Passing changes on `main` deploy to GitHub Pages. Generated files are not committed.
 

@@ -4,8 +4,8 @@ import {spawnSync} from 'node:child_process';
 const require=createRequire(import.meta.url);
 const esbuild=require(require.resolve('esbuild',{paths:[require.resolve('wrangler/package.json')]}));
 await mkdir('work',{recursive:true});
-for(const name of ['model-engine','grading-api','training','competition']){
+for(const name of ['model-engine','training','competition']){
  const outfile=`work/${name}.test.mjs`;
- await esbuild.build({entryPoints:[`tests/${name}.test.ts`],bundle:true,platform:'node',format:'esm',outfile,alias:{'cloudflare:workers':'./tests/worker-env.ts'}});
+ await esbuild.build({entryPoints:[`tests/${name}.test.ts`],bundle:true,platform:'node',format:'esm',outfile});
  const result=spawnSync(process.execPath,[outfile],{stdio:'inherit'});if(result.status!==0)process.exit(result.status??1);
 }
