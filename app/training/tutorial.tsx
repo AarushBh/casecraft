@@ -39,14 +39,15 @@ export function TutorialIntro({onStart}: {onStart: (path: GuidePath) => void}) {
 export default function Tutorial({path, onClose}: {path: GuidePath | null; onClose: () => void}) {
   const [step, setStep] = useState(0);
   const title = useRef<HTMLHeadingElement>(null);
+  const body = useRef<HTMLDivElement>(null);
   useEffect(() => {setStep(0)}, [path]);
-  useEffect(() => {if(path) title.current?.focus()}, [path, step]);
+  useEffect(() => {if(path){title.current?.focus({preventScroll:true}); body.current?.scrollTo({top:0});}}, [path, step]);
   if(!path) return null;
   const steps = guides[path], current = steps[step];
   return <Dialog open onOpenChange={open => {if(!open) onClose()}}><DialogContent className="tutorial-dialog">
     <div className="tutorial-heading"><BookOpen size={21}/><div><DialogTitle>{path === 'competition' ? 'Competition Hall' : 'Career Launchpad'} guide</DialogTitle><DialogDescription>Learn the workflow. Close anytime; your practice stays in place.</DialogDescription></div></div>
     <div className="tutorial-progress" aria-label={`Step ${step + 1} of ${steps.length}`}><span>STEP {step + 1} OF {steps.length}</span><progress max={steps.length} value={step + 1}/></div>
-    <div className="tutorial-body"><nav className="tutorial-contents" aria-label="Tutorial steps">{steps.map((item, i) => <button key={item.title} aria-current={step === i ? 'step' : undefined} onClick={() => setStep(i)}><span>{i + 1}</span>{item.title}</button>)}</nav>
+    <div className="tutorial-body" ref={body}><nav className="tutorial-contents" aria-label="Tutorial steps">{steps.map((item, i) => <button key={item.title} aria-current={step === i ? 'step' : undefined} onClick={() => setStep(i)}><span>{i + 1}</span>{item.title}</button>)}</nav>
       <article className="tutorial-step"><h2 ref={title} tabIndex={-1}>{current.title}</h2><p className="tutorial-lead">{current.body}</p><ol>{current.actions.map(action => <li key={action}>{action}</li>)}</ol><div className="tutorial-example"><b>For example</b><p>{current.example}</p></div><p className="tutorial-tip"><b>Practice tip</b> {current.tip}</p></article>
     </div>
     <div className="tutorial-navigation"><button className="secondary-button" disabled={step === 0} onClick={() => setStep(n => n - 1)}><ArrowLeft size={16}/> Back</button><button className="text-button" onClick={onClose}>Close guide</button><button className="primary" onClick={() => step === steps.length - 1 ? onClose() : setStep(n => n + 1)}>{step === steps.length - 1 ? <>Ready to practice <Check size={16}/></> : <>Next step <ArrowRight size={16}/></>}</button></div>
