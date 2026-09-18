@@ -1,2 +1,17 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Practice DECA and FBLA cases with sourced indicators and scorecards, plus business and technology interview drills."/><meta name="author" content="Casecraft"/><meta name="copyright" content="© 2026 Casecraft. All rights reserved."/><link rel="icon" href="./favicon.svg" type="image/svg+xml"/><title>Casecraft — Business & technology practice</title></head><body><div id="root"></div><script type="module" src="/standalone/main.tsx"></script></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Practice DECA and FBLA cases with sourced indicators and scorecards, plus business and technology interview drills."/>
+<meta name="author" content="Casecraft"/><meta name="copyright" content="© 2026 Casecraft. All rights reserved."/>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml"/><title>Casecraft — Business & technology practice</title>
+<style>
+#boot-screen{position:fixed;inset:0;z-index:1000;background:#10271f;color:#eef5e7;display:grid;place-content:center;justify-items:center;font-family:Arial,Helvetica,sans-serif;transition:opacity .25s ease;gap:22px}#boot-screen.boot-ready{opacity:0;pointer-events:none}.boot-mark{position:relative;width:62px;height:62px}.boot-mark i{position:absolute;width:36px;height:36px;border:1px solid #d6f89f;border-radius:7px;left:13px;top:13px;transform:rotate(45deg);animation:boot-stack 1.5s ease-in-out infinite}.boot-mark i:nth-child(2){animation-delay:-.5s}.boot-mark i:nth-child(3){animation-delay:-1s}.boot-name{font-size:22px;font-weight:600;letter-spacing:-1px}#boot-status{font-size:11px;color:#a6bcab;letter-spacing:1px;margin:0}.boot-line{width:100px;height:2px;background:#294937;overflow:hidden}.boot-line:after{content:'';display:block;width:40px;height:2px;background:#d6f89f;animation:boot-travel 1s ease-in-out infinite}#boot-retry{color:#d6f89f;font-size:13px;padding:12px}#boot-screen noscript{font-size:13px;max-width:300px;text-align:center;line-height:1.7}@keyframes boot-stack{0%,100%{transform:translateY(-9px) rotate(45deg);opacity:.2}50%{transform:translateY(9px) rotate(45deg);opacity:1}}@keyframes boot-travel{from{transform:translateX(-40px)}to{transform:translateX(100px)}}@media(prefers-reduced-motion:reduce){.boot-mark i,.boot-line:after{animation:none}#boot-screen{transition:none}}
+</style>
+</head>
+<body>
+<div id="boot-screen" role="status" aria-label="Loading Casecraft"><div class="boot-mark" aria-hidden="true"><i></i><i></i><i></i></div><div class="boot-name">casecraft</div><div class="boot-line" aria-hidden="true"></div><p id="boot-status">Loading your practice space</p><a id="boot-retry" href="" hidden>Reload Casecraft</a><noscript>Enable JavaScript to open Casecraft. Your browser needs it to run the practice workbench.</noscript></div>
+<div id="root"></div>
+<script>window.setTimeout(function(){var status=document.getElementById('boot-status'),retry=document.getElementById('boot-retry');if(status&&retry){status.textContent='Taking longer than expected. Check your connection.';retry.hidden=false}},20000)</script>
+<script type="module" src="/standalone/main.tsx"></script>
+</body></html>

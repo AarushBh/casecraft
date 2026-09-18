@@ -12,8 +12,8 @@ import CompetitionPractice from './training/competition-practice';
 import {profiles} from './training/competition';
 const pathNames={deca:'DECA',fbla:'FBLA',interviews:'Interview Prep'};
 export default function Home(){
- const[intro,setIntro]=useState(()=>{try{return !new URLSearchParams(window.location.search).has('page')&&sessionStorage.getItem('casecraft-entered-v1')!=='yes'}catch{return true}});
- function enterSite(){setIntro(false);try{sessionStorage.setItem('casecraft-entered-v1','yes')}catch{}}
+ const[intro,setIntro]=useState(()=>!['terms','privacy'].includes(new URLSearchParams(window.location.search).get('page')||''));
+ function enterSite(){setIntro(false)}
  const[guide,setGuide]=useState<GuidePath|null>(null);
  const[legal,setLegal]=useState<'terms'|'privacy'|null>(null);
  useEffect(()=>{const page=new URLSearchParams(window.location.search).get('page');if(page==='terms'||page==='privacy')setLegal(page)},[]);
