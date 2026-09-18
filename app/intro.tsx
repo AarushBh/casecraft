@@ -31,7 +31,7 @@ function Player({track}:{track:IntroTrack}) {
         });
       });
     }).catch(()=>{if(!disposed){window.clearTimeout(timeout);setState('unavailable')}});
-    return()=>{disposed=true;window.clearTimeout(timeout);if(controller){controller.pause();controller.destroy()}container.replaceChildren()};
+    return()=>{disposed=true;window.clearTimeout(timeout);if(controller)controller.destroy()container.replaceChildren()};
   },[track.id]);
   return <><div ref={host} className="soundtrack-player"/>
     <p className="soundtrack-status" role="status">{state==='loading'?'Connecting to Spotify…':state==='playing'?'Playing on Spotify':state==='unavailable'?'Spotify is unavailable. You can still enter Casecraft.':'If sound hasn’t started, press play in Spotify.'}</p>
