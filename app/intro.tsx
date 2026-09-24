@@ -1,7 +1,7 @@
 'use client';
 
 import {useEffect,useRef,useState} from 'react';
-import {ArrowRight, Layers3, Shuffle, VolumeX, Volume2} from 'lucide-react';
+import {ArrowRight, Layers3, Shuffle, VolumeX, Volume2, Headphones, ChevronDown} from 'lucide-react';
 import {Dialog, DialogContent, DialogTitle, DialogDescription} from '@/components/ui/dialog';
 import {availableIntroTracks,pickIntroTrack,type IntroTrack} from './music/tracks';
 import {getMusicVisit} from './music/visits';
@@ -46,14 +46,14 @@ function Soundtrack(){
   const [track,setTrack]=useState(()=>pickIntroTrack(undefined,Math.random,rareUnlocked));
   const [enabled,setEnabled]=useState(()=>{try{return localStorage.getItem('casecraft-music-off')!=='yes'}catch{return true}});
   function toggle(){try{localStorage.setItem('casecraft-music-off',enabled?'yes':'no')}catch{}setEnabled(!enabled)}
-  return <section className="soundtrack" aria-label="Intro soundtrack">
+  return <details className="soundtrack soundtrack-mini"><summary className="soundtrack-mini-trigger" aria-label="Expand music player"><Headphones size={15}/><span>Music</span><ChevronDown size={13}/></summary><div className="soundtrack-popover">
     <div className="soundtrack-tools"><span>{track.rare?'Rare find':'Music'}</span><div>
       <button aria-label="Shuffle intro song" title="Shuffle song" onClick={()=>setTrack(pickIntroTrack(track.id,Math.random,rareUnlocked))}><Shuffle size={17}/></button>
       <button aria-label={enabled?'Turn music off':'Turn music on'} title={enabled?'Turn music off':'Turn music on'} onClick={toggle}>{enabled?<VolumeX size={18}/>:<Volume2 size={18}/>}</button>
     </div></div>
     {enabled?<Player key={track.id} track={track}/>:<p className="soundtrack-off">Music off. Your preference is saved.</p>}
     <details className="soundtrack-choices"><summary>Choose a song</summary><label>Soundtrack<select aria-label="Choose intro song" value={track.id} onChange={event=>{const selected=choices.find(song=>song.id===event.target.value);if(selected)setTrack(selected)}}>{choices.map(song=><option key={song.id} value={song.id}>{song.title} — {song.artist}</option>)}</select></label><p>Only recordings marked non-explicit by Spotify.{rareUnlocked&&' The rare pick has a 1% chance on shuffle.'}</p></details>
-  </section>;
+  </div></details>;
 }
 
 export default function Intro({open,onEnter}:{open:boolean;onEnter:()=>void}) {
