@@ -18,7 +18,7 @@ function Player({track}:{track:IntroTrack}) {
     const timeout=window.setTimeout(()=>{if(!disposed)setState('unavailable')},15000);
     getSpotifyAPI().then(api=>{
       if(disposed)return;
-      api.createController(mount,{uri:`spotify:track:${track.id}`,width:'100%',height:152,theme:'dark'},instance=>{
+      api.createController(mount,{uri:`spotify:track:${track.id}`,width:'100%',height:80,theme:'dark'},instance=>{
         if(disposed){instance.destroy();return}
         controller=instance;
         instance.addListener('ready',()=>{
@@ -47,7 +47,7 @@ function Soundtrack(){
   const [enabled,setEnabled]=useState(()=>{try{return localStorage.getItem('casecraft-music-off')!=='yes'}catch{return true}});
   function toggle(){try{localStorage.setItem('casecraft-music-off',enabled?'yes':'no')}catch{}setEnabled(!enabled)}
   return <section className="soundtrack" aria-label="Intro soundtrack">
-    <div className="soundtrack-tools"><span>{track.rare?'A rare little detour.':'A little music before you begin.'}</span><div>
+    <div className="soundtrack-tools"><span>{track.rare?'Rare find':'Music'}</span><div>
       <button aria-label="Shuffle intro song" title="Shuffle song" onClick={()=>setTrack(pickIntroTrack(track.id,Math.random,rareUnlocked))}><Shuffle size={17}/></button>
       <button aria-label={enabled?'Turn music off':'Turn music on'} title={enabled?'Turn music off':'Turn music on'} onClick={toggle}>{enabled?<VolumeX size={18}/>:<Volume2 size={18}/>}</button>
     </div></div>
@@ -59,11 +59,11 @@ function Soundtrack(){
 export default function Intro({open,onEnter}:{open:boolean;onEnter:()=>void}) {
   return <Dialog open={open} onOpenChange={value=>{if(!value)onEnter()}}><DialogContent className="entrance-dialog" showCloseButton={false}>
     <div className="entrance-top"><span><Layers3 size={22}/> casecraft</span><button onClick={onEnter}>Skip <ArrowRight size={16}/></button></div>
+    {open&&<Soundtrack/>}
     <div className="entrance-main"><div className="entrance-orbit" aria-hidden="true"><Layers3 size={34}/></div>
       <DialogTitle className="entrance-title">Make your next move.</DialogTitle>
       <DialogDescription className="entrance-description">A little practice. A lot more confidence.</DialogDescription>
       <button className="enter-casecraft" onClick={onEnter}>Enter Casecraft <ArrowRight size={19}/></button>
-      {open&&<Soundtrack/>}
     </div>
     <div className="entrance-bottom">Competition Hall <span>·</span> Career Launchpad</div>
   </DialogContent></Dialog>;
