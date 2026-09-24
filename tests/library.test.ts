@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {matchesSearch,readPracticeHistory,wordCount} from '../app/training/library-utils';
+assert.equal(matchesSearch('Pricing risk and customer retention',' retention   PRICING '),true);
+assert.equal(matchesSearch('Pricing risk','pricing marketing'),false);
+assert.equal(matchesSearch('Pricing risk','   '),true);
+assert.equal(wordCount('  First\nsecond\tthird  '),3);
+assert.equal(wordCount('   '),0);
+assert.deepEqual(readPracticeHistory(null),[]);
+const valid={id:'case:0',title:'Practice',score:80};
+const valid110={id:'case:1',caseId:'case:1',title:'Scorecard',score:105,max:110};
+assert.deepEqual(readPracticeHistory([null,{},valid,{...valid,score:NaN},{...valid,max:0},{...valid,score:-1},{...valid,score:101},{...valid,caseId:{}},valid110]),[{...valid,max:100},valid110]);
+assert.equal(readPracticeHistory(Array.from({length:40},()=>valid)).length,30);
+console.log('Library: search whitespace/order, word counts, and malformed stored scores passed');
