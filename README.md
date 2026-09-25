@@ -65,3 +65,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for changes to case content or grading. R
 Original software and documentation are [MIT licensed](LICENSE), © 2026 Casecraft. Third-party competition materials and trademarks retain their owners’ rights; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Casecraft is not affiliated with DECA or FBLA.
+
+### Appearance and company preparation
+
+The header offers light, dark and system themes. The preference stays in local storage; system mode follows the operating system.
+
+Career Launchpad includes a Company prep library within each role: 23 employer/role tracks and 46 practice assignments. Software engineering includes Citadel, Jane Street, Optiver, Amazon and Microsoft. Employer briefs link to official hiring guidance. Exercises are original, with some role scenarios shared across employers; they are not reported interview questions or employer scoring rubrics. Written feedback uses the existing copy-and-import review workflow.
+
+Company content lives in `app/training/company-content.ts`. Keep case IDs stable to preserve drafts and review bindings. Run `pnpm test`, `pnpm typecheck` and `pnpm build` before publishing.
