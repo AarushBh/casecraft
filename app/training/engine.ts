@@ -1,3 +1,4 @@
+import {expandedCareerCases,careerFamilies} from './career-expansion';
 import {expandCompetition} from './practice-expansion';
 import {expandInterviews,roleFamilies} from './interview-expansion';
 import {profiles} from './competition';
@@ -62,10 +63,33 @@ const addedNumbers:Record<string,NumberCheck[]>={
 'corporate-finance-3':[{label:'Days sales outstanding',answer:50,tolerance:.01,unit:'days'}],
 'corporate-finance-4':[{label:'A contribution per bottleneck hour',answer:30,tolerance:.01,unit:'$ / hour'},{label:'B contribution per bottleneck hour',answer:40,tolerance:.01,unit:'$ / hour'}],
 };
-export type PracticeCase=Seed&{company?:{id:string;name:string;source:string};id:string;eventId:string;index:number;checks:Check[];numbers:NumberCheck[]};
-export function practiceCount(e:Event){return e.path==='interviews'?24:profiles[e.id]?.format==='Role Play'||(e.path==='deca'&&profiles[e.id]?.indicators.length>0)?100:24}
+export type PracticeCase=Seed&{topic?:string;drillKind?:'Core'|'Deep dive'|'Pressure test';sharedRoleCaseId?:string;company?:{id:string;name:string;source:string};id:string;eventId:string;index:number;checks:Check[];numbers:NumberCheck[]};
+export function practiceCount(e:Event){return e.path==='interviews'?24+(careerFamilies[e.id]?.length||0)*3:profiles[e.id]?.format==='Role Play'||(e.path==='deca'&&profiles[e.id]?.indicators.length>0)?100:24}
 const caseCache=new Map<string,PracticeCase[]>();
-export function getCases(event:Event):PracticeCase[]{const cached=caseCache.get(event.id);if(cached)return cached;const fallback=domains[event.domain]||extra[event.domain]||[];const list=event.path==='interviews'?expandInterviews(interviews[event.domain]||roleFamilies(event.domain)):expandCompetition(event,competitionCases(event,fallback),profiles[event.id]);if(!list)throw Error(`Missing practice domain: ${event.domain}`);const result=list.map((s,index)=>({...s,id:`${event.id}:${index}`,eventId:event.id,index,checks:checks[event.domain]||triples[event.domain].map((pattern,i)=>({label:['Core concepts','Trade-offs and constraints','Verification and next steps'][i],pattern,next:[`Explain the ${event.name.toLowerCase()} concepts behind your choice.`, 'Connect your recommendation to the case’s constraints and a realistic downside.', 'Add a specific check, decision threshold or next action.'][i]})),numbers:event.path==='interviews'&&index<8?(['banking','consulting','quant'].includes(event.id)?numbers[`${event.domain}-${index}`]||[]:addedNumbers[`${event.id}-${index}`]||[]):[]}));caseCache.set(event.id,result);return result}
+export function getCases(event:Event):PracticeCase[]{
+ const cached=caseCache.get(event.id);
+ if(cached)return cached;
+ const fallback=domains[event.domain]||extra[event.domain]||[];
+ const additions=event.path==='interviews'?expandedCareerCases(event.id):[];
+ const list=event.path==='interviews'
+  ?[...expandInterviews(interviews[event.domain]||roleFamilies(event.domain)),...additions]
+  :expandCompetition(event,competitionCases(event,fallback),profiles[event.id]);
+ if(!list)throw Error(`Missing practice domain: ${event.domain}`);
+ const result=list.map((s,index)=>({
+  ...s,
+  topic:event.path==='interviews'?('topic' in s?String(s.topic):'Role fundamentals'):undefined,
+  drillKind:event.path==='interviews'?('drillKind' in s?s.drillKind:index<8?'Core':index<16?'Deep dive':'Pressure test') as PracticeCase['drillKind']:undefined,
+  id:`${event.id}:${index}`,eventId:event.id,index,
+  checks:checks[event.domain]||triples[event.domain].map((pattern,i)=>({
+   label:['Core concepts','Trade-offs and constraints','Verification and next steps'][i],pattern,
+   next:[`Explain the ${event.name.toLowerCase()} concepts behind your choice.`, 'Connect your recommendation to the case’s constraints and a realistic downside.', 'Add a specific check, decision threshold or next action.'][i]
+  })),
+  numbers:event.path==='interviews'&&index>=24?additions[index-24].numbers:event.path==='interviews'&&index<8
+   ?(['banking','consulting','quant'].includes(event.id)?numbers[`${event.domain}-${index}`]||[]:addedNumbers[`${event.id}-${index}`]||[]):[]
+ }));
+ caseCache.set(event.id,result);
+ return result;
+}
 export const levels=['Foundation','Challenge','Stretch'] as const;
 export function levelPrompt(level:number,c:PracticeCase){return level===2?`Stretch: defend your answer against both follow-up questions. State the assumption most likely to change your conclusion.`:level===1?`Challenge: address the first follow-up question and one limitation of your approach.`:'Foundation: use the facts, show your thinking, and make a clear recommendation or answer.'}
 export function formatNote(e:Event){if(e.path==='interviews')return 'Original interview drills informed by publicly available preparation guidance. These are not reported questions from any employer.';if(/online|simulation|virtual|stock market/i.test(e.format))return 'Strategy and decision drills for this event. These do not run the official competition simulation or reproduce its scoring.';if(/objective|test|knowledge/i.test(e.format)&&!/role/i.test(e.format))return 'Open-response knowledge application for this event. The official event may use an objective test; this practice deliberately asks you to explain your reasoning.';if(/presentation|prepared|production|pre.judged|project|report|coding/i.test(e.format))return 'Planning and defense practice for this event. Written responses do not replace any finished artifact, report, code, speech or presentation required by the official rules.';return 'Written role-play practice for this event. Delivery, teamwork and judge interaction need separate live rehearsal.'}

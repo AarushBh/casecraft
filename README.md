@@ -9,7 +9,7 @@ Choose an event or role, work through a case, and explain your solution in writi
 ## Practice paths
 
 - **Competition Hall:** DECA and FBLA events, with event-specific formats, selected performance indicators, and sourced scorecards.
-- **Career Launchpad:** technical and behavioral interview practice across ten business and technology roles.
+- **Career Launchpad:** 480 technical and behavioral drills across ten business and technology roles, organized into 160 case families, plus 53 company preparation tracks.
 
 Cases are original practice material. Rehearsal variations add constraints to a core case; they are not separate official past papers. Each competition profile links to its source material and season.
 
@@ -70,6 +70,8 @@ Casecraft is not affiliated with DECA or FBLA.
 
 The header offers light, dark and system themes. The preference stays in local storage; system mode follows the operating system.
 
-Career Launchpad includes a Company prep library within each role: 23 employer/role tracks and 46 practice assignments. Software engineering includes Citadel, Jane Street, Optiver, Amazon and Microsoft. Employer briefs link to official hiring guidance. Exercises are original, with some role scenarios shared across employers; they are not reported interview questions or employer scoring rubrics. Written feedback uses the existing copy-and-import review workflow.
+Career Launchpad has 48 role drills per field: 16 core cases, 16 deep dives and 16 pressure tests. The 80 case families added in October 2026 include follow-up-specific worked answers and independently tested numerical checks. Topic and practice-type filters help narrow the library.
 
-Company content lives in `app/training/company-content.ts`. Keep case IDs stable to preserve drafts and review bindings. Run `pnpm test`, `pnpm typecheck` and `pnpm build` before publishing.
+Each field has 5–8 employers. The 53 company tracks contain 18 assignments each: two company essentials and 16 explicitly labeled shared role cases. These 954 company assignments are not 954 additional unique questions; shared exercises also appear in the role library. Employer briefs link to official resources and distinguish Casecraft coaching from employer guidance. Written feedback uses the existing copy-and-import review workflow.
+
+New case families live in `app/training/career-expansion.ts`; company assignments and employer sources live in `app/training/company-content.ts` and `app/training/employers.ts`. Keep case IDs stable to preserve drafts and review bindings. Run `pnpm test`, `pnpm typecheck` and `pnpm build` before publishing.

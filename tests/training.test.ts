@@ -8,8 +8,8 @@ assert.equal(new Set(catalog.map(e=>e.id)).size,catalog.length);
 let count=0,numericCount=0;
 for(const e of catalog){const cs=getCases(e);assert.equal(cs.length,practiceCount(e));assert.ok(cs.length>=2,e.name);assert.ok(e.source.startsWith('https://'));assert.ok(formatNote(e));for(const c of cs){count++;assert.equal(c.followups.length,2);assert.ok(c.benchmark.length>60);assert.equal(c.checks.length,3);for(const ch of c.checks)new RegExp(ch.pattern,'i');for(let level=0;level<=2;level++){const empty=review(c,{response:'',results:[],followups:[]},level);assert.equal(empty.score,null);const unrelated=review(c,{response:'Zzzzz.',results:[],followups:[]},level);assert.equal(unrelated.score,null);const result=review(c,{response:c.benchmark,results:c.numbers.map(n=>String(n.answer)),followups:['A response','Another response']},level);assert.equal(result.score,null);assert.equal(result.numericSummary.passed,result.numericSummary.total);for(const n of result.numeric)assert.equal(n.correct,true);numericCount+=result.numeric.length;}
 const wrong=review(c,{response:c.benchmark,results:c.numbers.map(n=>String(n.answer+Math.max(100,n.tolerance*10))),followups:[]},0);assert.ok(wrong.numeric.every(n=>!n.correct));}}
-assert.equal(count,6544);
-for(const e of catalog.filter(e=>e.path==='interviews')){assert.equal(getCases(e).length,24);assert.equal(new Set(getCases(e).map(c=>c.prompt)).size,24);assert.ok(getCases(e).slice(8).every(c=>c.numbers.length===0));}
+assert.equal(count,6784);
+for(const e of catalog.filter(e=>e.path==='interviews')){assert.equal(getCases(e).length,48);assert.equal(new Set(getCases(e).map(c=>c.prompt)).size,48);assert.ok(getCases(e).filter(c=>c.drillKind!=='Core').every(c=>c.numbers.length===0));}
 assert.equal(getCases(catalog.find(e=>e.id==='data-analytics')!)[0].numbers[0].answer,2.4);
 assert.equal(numericValue('1/11'),1/11);assert.equal(numericValue('1,400'),1400);assert.equal(numericValue('  -5000 '),-5000);
 for(const invalid of ['', '1/0','Infinity','NaN','100 dollars','<script>','1e309','0x10','1+2','1,2','12,34','1,,000',',100','1,000,00'])assert.equal(numericValue(invalid),null);
